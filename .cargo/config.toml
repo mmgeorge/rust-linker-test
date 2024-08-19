@@ -1,0 +1,8 @@
+[build]
+
+[target.x86_64-pc-windows-msvc]
+# linker = "rust-lld"
+# linker = "lld-link.exe"
+# rustflags= "-Zthreads=8 -Zshare-generics=n -Cprefer-dynamic -Clink-args=/DEBUG:NONE"
+rustflags= "-Zthreads=8 -Zshare-generics=n -Cprefer-dynamic"
+

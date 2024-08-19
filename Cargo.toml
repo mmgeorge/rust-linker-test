@@ -1,0 +1,15 @@
+[package]
+name = "link-test"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+tokio = { version = "1.9.0", features = ["full"]}
+polars = { version = "0.42.0", features = ["parquet"] }
+reqwest = { version = "0.12.5", features = ["json"] }
+wgpu = "22.1.0"
+winit = "0.30.5"
+serde = { version = "1.0.208", features = ["derive"] }
